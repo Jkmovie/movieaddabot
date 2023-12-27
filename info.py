@@ -32,7 +32,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1002128031176')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001792694440')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -49,11 +49,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Omegalinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'b2582f8c38a9c76c2315b44f7ba039ea7196e551')
-SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'Omegalinks.in')
-SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', 'b2582f8c38a9c76c2315b44f7ba039ea7196e551')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Zxlink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '717ed05741f661fdfe72eeafee077496ca23f3e9')
+SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'Zxlink.in')
+SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '717ed05741f661fdfe72eeafee077496ca23f3e9')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
